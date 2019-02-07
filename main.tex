@@ -31,17 +31,42 @@ The refresher is not graded and does not have to be submitted. If there is somet
   \titledquestion{Matrix Arithmetic}
   \begin{parts}
     \part Write down the 3x3 {\it identity matrix}.
+    \[
+      \left(
+        \begin{array}{ccc}
+          1 & 0 & 0\\
+          0 & 1 & 0\\
+          0 & 0 & 1
+        \end{array}
+      \right)
+    \]
     \part\label{transform} Given an $n\times n$ matrix, $A$, a vector, $x$, and the equation below
     \[ Ax = b, \]
     what are the dimensions of $x$ and $b$?
+    \newline
+    x is a vector of n elements. b is a vector of n elements.
     \part Write down an expression for $x$ in (\ref{transform}).
+    \newline 
+    $ = A^{-1}b$
+    \newline
     \part\label{eq} Write the following system of equations in matrix form.
     \begin{align*}
       2x + y - 2z	& =  3\\
       x - y - z & =	0\\
       x + y + 3z & = 12
     \end{align*}
+    \[
+      \left(
+        \begin{array}{cccc}
+          2 & 1 & -2 & 3\\
+          1 & -1 & -1 & 0\\
+          1 & 1 & 3 & 12
+        \end{array}
+      \right)
+    \]
     \part Solve the system of equations from (\ref{eq}).
+    \newline
+    $x = 7/2, y = 1, z = 5/2$
     \part Find the transpose and inverse of the matrix
     \[
       \left(
@@ -52,6 +77,27 @@ The refresher is not graded and does not have to be submitted. If there is somet
         \end{array}
       \right)
     \].
+    \newline
+    Transpose:
+    \[
+      \left(
+        \begin{array}{ccc}
+          1 & 1 & 2\\
+          2 & 1 & 1\\
+          1 & 1 & 1
+        \end{array}
+      \right)
+    \]
+    Inverse: 
+    \[
+      \left(
+        \begin{array}{ccc}
+          0 & -1 & 1\\
+          1 & -1 & 0\\
+          -1 & 3 & -1
+        \end{array}
+      \right)
+    \]
   \end{parts}    
 
   \titledquestion{Vectors}
